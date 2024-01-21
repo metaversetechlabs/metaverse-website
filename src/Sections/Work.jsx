@@ -42,7 +42,7 @@ const Work = () => {
     },
   ];
   return (
-    <div className='w-full items-center my-10'>
+    <div className='w-screen items-center my-10'>
       <SectionHeader headerText='What Do We Leverage' />
       <div
         className='w-full flex flex-col gap-6
@@ -59,11 +59,8 @@ const Work = () => {
                 : 'flex-col sm:flex-row',
             ]}
           >
-            <div
-              data-aos='fade-left'
-              className='w-full sm:w-1/2 flex flex-col justify-center text-justify items-start p-4'
-            >
-              <span className='font-semibold text-white w-full sm:w-9/12 text-headerResized my-5  text-center sm:text-start'>
+            <div className='w-full sm:w-1/2 flex flex-col justify-center text-justify items-start p-4'>
+              <span className='font-semibold text-white w-full  sm:w-9/12 text-headerResized my-5  text-center sm:text-start'>
                 {item.heading}
               </span>
               <span className='text-transparent font-medium text-contentResized w-full bg-gradient-to-r from-gradientFont1 via-gradientFont2 to-gradientFont3 bg-clip-text text-center sm:text-start'>
@@ -75,10 +72,7 @@ const Work = () => {
                 </p>
               ))}
             </div>
-            <div
-              data-aos='zoom-out'
-              className='w-full sm:w-1/2 flex justify-center items-center'
-            >
+            <div className='w-full sm:w-1/2 flex justify-center items-center'>
               <img src={item.img} className='w-9/12' />
             </div>
           </div>

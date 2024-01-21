@@ -15,16 +15,10 @@ const AboutSection = () => {
     <div className='w-full  items-center' id='aboutus'>
       <SectionHeader headerText={'About Us'} />
       <div className='w-full sm:my-20 justify-center flex flex-col-reverse sm:flex-row'>
-        <div
-          data-aos='zoom-out'
-          className='w-full sm:flex-1 flex justify-center items-center'
-        >
+        <div className='w-full sm:flex-1 flex justify-center items-center'>
           <img className='w-3/5 h-full' src={About} />
         </div>
-        <div
-          data-aos='fade-left'
-          className='sm:w-1/2 space-y-4 my-7 sm:my-0 flex flex-col px-10 items-center sm:items-start justify-center'
-        >
+        <div className='sm:w-1/2 space-y-4 my-7 sm:my-0 flex flex-col px-10 items-center sm:items-start justify-center'>
           <p className='text-white text-smallResized text-center sm:text-justify'>
             MetAIverse Tech Labs Pvt Ltd is a pioneering technology company
             dedicated to creating immersive Metaverse, AI & Gaming experiences

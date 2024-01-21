@@ -12,7 +12,7 @@ const HeroSection = () => {
 
   return (
     <div
-      data-aos='zoom-in'
+      // data-aos='zoom-in'
       className='w-full flex flex-col-reverse sm:flex-row my-10'
     >
       <div className='w-full sm:w-1/2 flex flex-col px-8 sm:pl-20 justify-center items-center sm:items-start text-center sm:text-start'>

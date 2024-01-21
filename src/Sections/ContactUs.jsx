@@ -28,7 +28,7 @@ const ContactUs = () => {
     e.preventDefault();
     // console.log(formData);
     fetch(
-      'https://sheet.best/api/sheets/6a731e63-6238-4dea-b42d-58cfbbc39e31',
+      'https://sheet.best/api/sheets/802a4436-4f05-4b7d-81aa-6c9143ba4583',
       {
         method: 'POST',
         mode: 'cors',
@@ -60,10 +60,7 @@ const ContactUs = () => {
   const { First_Name, Last_Name, Mobile_No, Email_ID, Organization, Query } =
     formData;
   return (
-    <div
-      data-aos='zoom-in'
-      className='h-fit w-full flex justify-center p-4 sm:p-10]'
-    >
+    <div className='h-fit w-full flex justify-center p-4 sm:p-10]'>
       <div className='rounded-3xl sm:w-4/5 w-full h-fit sm:h-screen bg-[#171717] flex flex-col-reverse sm:flex-row justify-center items-center overflow-hidden'>
         <div className='w-full sm:w-[45%] h-full'>
           {/* <img
