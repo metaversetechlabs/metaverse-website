@@ -42,15 +42,17 @@ const TeamCards = ({ item }) => {
           >
             <FaLinkedin className='text-gray-800' size={22} />
           </a>
-          <a
-            href={item.links[1]}
-            target='_blank'
-            className={` ${
-              item.links.length === 0 && 'pointer-events-none'
-            } p-3 rounded-full bg-slate-300  cursor-pointer delay-100 hover:bg-gray-400 flex justify-start items-center`}
-          >
-            <FaSquareXTwitter className='text-gray-800' size={20} />
-          </a>
+          {item.links[1] && (
+            <a
+              href={item.links[1]}
+              target='_blank'
+              className={` ${
+                item.links.length === 0 && 'pointer-events-none'
+              } p-3 rounded-full bg-slate-300  cursor-pointer delay-100 hover:bg-gray-400 flex justify-start items-center`}
+            >
+              <FaSquareXTwitter className='text-gray-800' size={20} />
+            </a>
+          )}
         </div>
       </div>
     </div>

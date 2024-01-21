@@ -33,7 +33,7 @@ const Team = () => {
       position: 'Chief Product Officer',
       about:
         'Visionary product manager with expertise in both finance and technology.',
-      links: [],
+      links: ['https://www.linkedin.com/in/raghavarora1308/'],
     },
   ];
   return (
