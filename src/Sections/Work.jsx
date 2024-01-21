@@ -17,7 +17,6 @@ const Work = () => {
       heading: 'Metaverse',
       subHeading: 'Metaverse unlocks a realm of unparalleled opportunities.',
       text: [
-        'Metaverse unlocks a realm of unparalleled opportunities.',
         'It ushers in a new era in marketing and advertising, offering greater customer engagement, the power to craft immersive and unique experiences, access to a vibrant community of users and potential clients, and the means to expand your business in the virtual world.',
         'Metaverse provides a valuable touchpoint for the organization. We specialize in selecting the most suitable Metaverse platforms, designing exceptional experiences, and crafting 3D environments that deliver tangible value for your business.',
         'Metaverse can be made more potent with AI integration. ',
@@ -28,7 +27,7 @@ const Work = () => {
       heading: 'AI Tool',
       subHeading: 'Make experiences interactive and customisable ',
       text: [
-        'AI is used to make experiences interactive and customizable for users by using deep learning, NLP, machine vision, and speech recognition. AI-enhanced experiences connect you with a vibrant user community and open doors to virtual expansion.',
+        'Artificial Intelligence is used to make experiences interactive and customizable for users by using deep learning, NLP, machine vision, and speech recognition. AI-enhanced experiences connect you with a vibrant user community and open doors to virtual expansion.',
         'We can integrate your websites with chatbots and virtual assistants, and provide virtual experiences of your products. We can also help in demand forecasting and trend analysis through AI at an affordable price.',
       ],
     },
@@ -67,13 +66,19 @@ const Work = () => {
                 {item.subHeading}
               </span>
               {item.text.map((item, index) => (
-                <p className='font-normal text-white w-full text-smallResized my-1 text-center sm:text-start'>
-                  {item}
-                </p>
+                <div>
+                  <p className='font-normal text-white w-full text-smallResized my-1 text-center sm:text-start'>
+                    {item}
+                  </p>
+                  <br />
+                </div>
               ))}
             </div>
             <div className='w-full sm:w-1/2 flex justify-center items-center'>
-              <img src={item.img} className='w-9/12' />
+              <img
+                src={item.img}
+                className={`${index === 1 ? 'w-10/12' : 'w-9/12'} `}
+              />
             </div>
           </div>
         ))}

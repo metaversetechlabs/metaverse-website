@@ -44,13 +44,13 @@ const HeroSection = () => {
             className='flex justify-center items-center gap-2 '
             spyThrottle={500}
           >
-            Explore
+            Explore Now
             <FaArrowRightLong color='white' />
           </Link>
         </div>
       </div>
       <div className='cursor-pointer w-full sm:w-1/2 flex justify-center items-center'>
-        <img src={Hero} className='w-9/12' />
+        <img src={Hero} className='w-11/12' />
       </div>
     </div>
   );
