@@ -15,9 +15,7 @@ const ServiceCards = ({ item }) => {
       <h5 className='my-2 text-smResized font-bold tracking-tight text-white'>
         {item.name}
       </h5>
-      <p className='font-normal text-resized text-gray-700 dark:text-gray-400'>
-        {item.details}
-      </p>
+      <p className='font-normal text-resized text-gray-300'>{item.details}</p>
     </div>
   );
 };
