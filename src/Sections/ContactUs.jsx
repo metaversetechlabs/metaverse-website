@@ -60,7 +60,10 @@ const ContactUs = () => {
   const { First_Name, Last_Name, Mobile_No, Email_ID, Organization, Query } =
     formData;
   return (
-    <div data-aos='zoom-in' className='h-fit w-full flex justify-center p-10'>
+    <div
+      data-aos='zoom-in'
+      className='h-fit w-full flex justify-center p-4 sm:p-10]'
+    >
       <div className='rounded-3xl sm:w-4/5 w-full h-fit sm:h-screen bg-[#171717] flex flex-col-reverse sm:flex-row justify-center items-center overflow-hidden'>
         <div className='w-full sm:w-[45%] h-full'>
           {/* <img
@@ -80,11 +83,11 @@ const ContactUs = () => {
             <img src={Contact} className='w-full h-full object-cover' />
           </picture>
         </div>
-        <div className='w-full sm:w-[55%] p-6 h-full flex flex-col justify-center items-center'>
+        <div className='w-full sm:w-[55%] p-4 sm:p-6 h-full flex flex-col justify-center items-center'>
           <span className='text-smResized text-white font-bold'>
             Need to contact us ?
           </span>
-          <form className='w-full mt-10 h-fit' onSubmit={handleSubmit}>
+          <form className='w-full mt-6 sm:mt-10 h-fit' onSubmit={handleSubmit}>
             <div className='flex mb-5 sm:flex-row flex-col gap-5 sm:gap-0 justify-center items-center w-full'>
               <div className='flex pl-2 flex-col justify-center items-start gap-2 w-full sm:w-1/2'>
                 <label
@@ -199,7 +202,7 @@ const ContactUs = () => {
             <div className='p-[2px] bg-gradient-to-r from-gradientFont1 via-gradientFont2 to-gradientFont3 rounded-md'>
               <button
                 type='submit'
-                className='rounded-md text-white text-resized font-semibold w-full h-12 bg-[#121212]'
+                className='rounded-md text-white text-resized font-semibold w-full h-8 sm:h-12 bg-[#121212]'
               >
                 {submitText}
               </button>

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='bg-dark w-full h-fit p-10 flex flex-col justify-center items-center space-y-5'>
       <div className='w-full flex flex-col items-center justify-center text-center'>
-        <img src={Icon} className='h-52 sm:h-56 md:h-60 lg:h-64' />
+        <img src={Icon} className='h-48 sm:h-56 md:h-60 lg:h-64' />
         <span className='text-white font-semibold text-mdResized'>
           Reimagining Possibilities
         </span>
