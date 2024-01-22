@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavBar from './Sections/NavBar';
 import Footer from './Sections/Footer';
 import Team from './Sections/Team';
@@ -10,6 +10,10 @@ import ContactUs from './Sections/ContactUs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ContactUsScreen from './screens/ContactUsScreen';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = import.meta.env.VITE_REACT_APP_TRACKING_ID; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
   return (

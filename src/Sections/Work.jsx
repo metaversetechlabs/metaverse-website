@@ -66,7 +66,7 @@ const Work = () => {
                 {item.subHeading}
               </span>
               {item.text.map((item, index) => (
-                <div>
+                <div key={index}>
                   <p className='font-normal text-white w-full text-smallResized my-1 text-center sm:text-start'>
                     {item}
                   </p>
