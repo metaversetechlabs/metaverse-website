@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react';
 import ContactUs from '../Sections/ContactUs';
 import { useLocation } from 'react-router-dom';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 const ContactUsScreen = () => {
-  const location = useLocation();
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+    ReactGA.send({ hitType: 'Contact Page', page: window.location.pathname });
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);

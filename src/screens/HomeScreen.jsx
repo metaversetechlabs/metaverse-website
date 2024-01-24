@@ -5,13 +5,12 @@ import Work from '../Sections/Work';
 import Services from '../Sections/Services';
 import Team from '../Sections/Team';
 import { useLocation } from 'react-router-dom';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 const HomeScreen = () => {
-  const location = useLocation();
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+    ReactGA.send({ hitType: 'Home Page', page: window.location.pathname });
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);

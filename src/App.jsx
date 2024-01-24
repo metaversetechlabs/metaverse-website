@@ -12,10 +12,11 @@ import HomeScreen from './screens/HomeScreen';
 import ContactUsScreen from './screens/ContactUsScreen';
 import ReactGA from 'react-ga';
 
-const TRACKING_ID = import.meta.env.VITE_REACT_APP_TRACKING_ID; // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
-
 const App = () => {
+  // console.log(window.location.pathname);
+  // useEffect(() => {
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // }, [window.location.search]);
   return (
     <div className='bg-gradient-to-tl to-basePurple from-black min-h-[100vh]'>
       <Router>
