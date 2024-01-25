@@ -9,7 +9,7 @@ import ReactGA from 'react-ga4';
 
 const HomeScreen = () => {
   useEffect(() => {
-    ReactGA.send({ hitType: 'Home Page', page: window.location.pathname });
+    ReactGA.send({ hitType: 'Page View', page: window.location.pathname });
   }, []);
 
   useEffect(() => {

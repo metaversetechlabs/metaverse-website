@@ -10,7 +10,7 @@ import ContactUs from './Sections/ContactUs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ContactUsScreen from './screens/ContactUsScreen';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 const App = () => {
   // console.log(window.location.pathname);
